@@ -1,0 +1,34 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 04 Nov 2019 11:57:01 at https://colorlib.com//polygon/admindek/default/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +https://colorlib.com//polygon/admindek/default/index.html
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F  -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://colorlib.com//polygon/admindek/default/index.html -O1 "E:\IBRA4Media\template\Zekrayat Control panael3\zekrayat control panael 3" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +https://colorlib.com//polygon/admindek/default/index.html )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:01:06	Error: 	"Not Found" (404) at link https://colorlib.com//polygon/admindek/files/assets/css/pcoded-horizontal.min.css (from https://colorlib.com//polygon/admindek/default/menu-horizontal-fixed.html)
+12:01:06	Error: 	"Not Found" (404) at link https://colorlib.com//polygon/admindek/files/assets/images/Modal/overflow.jpg (from https://colorlib.com//polygon/admindek/default/modal.html)
+12:01:15	Error: 	"Not Found" (404) at link https://handsontable.com/docs/7.2.2/components/handsontable-pro/dist/handsontable.full.min.css (from https://colorlib.com//polygon/admindek/default/handson-appearance.html)
+12:01:18	Error: 	"Forbidden" (403) at link https://www.mapbox.com/files/assets/data/realworld.388.js (from https://colorlib.com//polygon/admindek/default/location.html)
+12:01:18	Warning: 	Retry after error -5 (Unable to get server's address: No such host is known. ) at link {s}.tile.osm.org/{z}/{x}/{y}.png (from https://colorlib.com//polygon/admindek/default/location.html)
+12:01:18	Error: 	"Not Found" (404) at link https://colorlib.com//polygon/admindek/files/bower_components/classie/js/classie.js (from https://colorlib.com//polygon/admindek/default/error.html)
+12:04:18	Error: 	"Not Found" (404) at link https://colorlib.com//polygon/admindek/default/cropped.jpg (from https://colorlib.com//polygon/admindek/default/image-crop.html)
+12:04:18	Error: 	"Not Found" (404) at link https://colorlib.com//polygon/admindek/files/bower_components/owl.carousel/css/owl.video.play.png (from https://colorlib.com//polygon/admindek/files/bower_components/owl.carousel/css/owl.carousel.css)
+12:04:18	Error: 	"Not Found" (404) at link https://colorlib.com//polygon/admindek/files/assets/pages/icon-tree.png (from https://colorlib.com//polygon/admindek/files/assets/pages/treeview/treeview.css)
+12:04:18	Error: 	"Not Found" (404) at link https://colorlib.com//polygon/admindek/files/assets/pages/throbber.gif (from https://colorlib.com//polygon/admindek/files/assets/pages/treeview/treeview.css)
+12:04:18	Error: 	"Not Found" (404) at link https://colorlib.com//polygon/admindek/files/assets/pages/tree-1.png (from https://colorlib.com//polygon/admindek/files/assets/pages/treeview/treeview.css)
+12:04:18	Error: 	"Not Found" (404) at link https://colorlib.com//polygon/admindek/files/bower_components/datatables.net/images/sort_both.png (from https://colorlib.com//polygon/admindek/files/bower_components/datatables.net/css/jquery.dataTables.min.css)
+12:04:18	Error: 	"Not Found" (404) at link https://colorlib.com//polygon/admindek/files/bower_components/datatables.net/images/sort_asc.png (from https://colorlib.com//polygon/admindek/files/bower_components/datatables.net/css/jquery.dataTables.min.css)
+12:04:18	Error: 	"Not Found" (404) at link https://colorlib.com//polygon/admindek/files/bower_components/datatables.net/images/sort_desc.png (from https://colorlib.com//polygon/admindek/files/bower_components/datatables.net/css/jquery.dataTables.min.css)
+12:04:18	Error: 	"Not Found" (404) at link https://colorlib.com//polygon/admindek/files/bower_components/datatables.net/images/sort_asc_disabled.png (from https://colorlib.com//polygon/admindek/files/bower_components/datatables.net/css/jquery.dataTables.min.css)
+12:04:18	Error: 	"Not Found" (404) at link https://colorlib.com//polygon/admindek/files/bower_components/datatables.net/images/sort_desc_disabled.png (from https://colorlib.com//polygon/admindek/files/bower_components/datatables.net/css/jquery.dataTables.min.css)
+12:04:18	Error: 	"Not Found" (404) at link https://colorlib.com//polygon/admindek/files/assets/pages/foo-table/images/sort_both.png (from https://colorlib.com//polygon/admindek/files/assets/pages/foo-table/css/jquery.dataTables.min.css)
+12:04:18	Error: 	"Not Found" (404) at link https://colorlib.com//polygon/admindek/files/assets/pages/foo-table/images/sort_asc.png (from https://colorlib.com//polygon/admindek/files/assets/pages/foo-table/css/jquery.dataTables.min.css)
+12:04:18	Error: 	"Not Found" (404) at link https://colorlib.com//polygon/admindek/files/assets/pages/foo-table/images/sort_desc.png (from https://colorlib.com//polygon/admindek/files/assets/pages/foo-table/css/jquery.dataTables.min.css)
+12:04:18	Error: 	"Not Found" (404) at link https://colorlib.com//polygon/admindek/files/assets/pages/foo-table/images/sort_asc_disabled.png (from https://colorlib.com//polygon/admindek/files/assets/pages/foo-table/css/jquery.dataTables.min.css)
+12:04:18	Error: 	"Not Found" (404) at link https://colorlib.com//polygon/admindek/files/assets/pages/foo-table/images/sort_desc_disabled.png (from https://colorlib.com//polygon/admindek/files/assets/pages/foo-table/css/jquery.dataTables.min.css)
+12:04:18	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link {s}.tile.osm.org/{z}/{x}/{y}.png (from https://colorlib.com//polygon/admindek/default/location.html)
+12:04:25	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link {s}.tile.osm.org/{z}/{x}/{y}.png (from https://colorlib.com//polygon/admindek/default/location.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 7 minutes 24 seconds : 1047 links scanned, 1023 files written (32738938 bytes overall) [11007478 bytes received at 24791 bytes/sec], 30717670 bytes transferred using HTTP compression in 970 files, ratio 25%, 58.2 requests per connection
+(21 errors, 2 warnings, 0 messages)
