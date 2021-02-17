@@ -15,10 +15,28 @@ use App\User;
 */
 
 
+Route::group([
+   'prefix' => '{locale}', 
+   'where' => ['locale' => '[a-zA-Z]{2}'], 
+   'middleware' => 'setlocale'], function() {
 
-Route::get('demo','HomeController@demo');
-Route::get('index','HomeController@index');
+    Route::get('/','HomeController@index')->name('index');
 
-Route::get('blog/{id}','HomeController@singlePost');
+    // Route::get('index/{lang}','HomeController@index');
 
-Route::get('aboutus','HomeController@aboutus');
+    Route::get('blog/{id}','HomeController@singlePost')->name('blog');
+
+
+
+    Route::get('categ/{id}','HomeController@categPosts')->name('categ');
+
+    Route::get('aboutus','HomeController@aboutus')->name('aboutus');
+    Route::get('contact','HomeController@contact')->name('contact');
+
+    Route::get('find','HomeController@findPost')->name('findpost');
+
+    
+   // Route::get('/home', 'HomeController@index')->name('home');
+
+
+});

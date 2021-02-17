@@ -1,3 +1,4 @@
+<?php $language = app()->getLocale(); ?>
 
   
   <!-- Slider Section -->
@@ -32,7 +33,17 @@
                                 data-paddingtop="[0,0,0,0]"
                                 data-paddingright="[0,0,0,0]"
                                 data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[0,0,0,0]">{{ $slide->enTitle }}</a>
+                                data-paddingleft="[0,0,0,0]">
+                            
+                                @if ($language=='en')				
+                                       {{ $slide->enTitle }}
+                                 @elseif ($language=='ar')
+                                     {{ $slide->arTitle }}
+                                 @elseif($language=='ba')
+                                    {{ $slide->baTitle }}
+                                @endif
+
+                                </a>
 
                             
                         </li>

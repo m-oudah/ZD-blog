@@ -13,6 +13,10 @@ class aboutus extends Model
         'arInfo',
         'enInfo',
         'baInfo',
+        'enContact',
+        'arContact',
+        'enContact',
+        'footer_text',
         'created_at',
         'updated_at'
     ];

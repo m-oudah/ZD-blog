@@ -92,6 +92,14 @@ class AboutusController extends Controller
             'enInfo' => 'required|min:10',
             'arInfo' => 'required|min:10',
             'baInfo' => 'required|min:10',
+           
+
+            'arContact' => 'required|min:10',
+            'enContact' => 'required|min:10',
+            'baContact' => 'required|min:10',
+
+
+            'footer_text' => 'required|min:10',
 
         ]);
        
@@ -99,6 +107,10 @@ class AboutusController extends Controller
         $aboutus->enInfo = $request->enInfo;
         $aboutus->arInfo = $request->arInfo;
         $aboutus->baInfo = $request->baInfo;
+        $aboutus->enContact = $request->enContact;
+        $aboutus->arContact = $request->arContact;
+        $aboutus->baContact = $request->baContact;
+        $aboutus->footer_text = $request->footer_text;
 
         $aboutus->update();
         return redirect()->back()->with('msg' ,  'About has been updated successfully');

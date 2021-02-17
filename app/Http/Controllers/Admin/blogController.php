@@ -63,7 +63,7 @@ class blogController extends Controller
            'arInfo' => 'required|min:50',
            'baInfo' => 'required|min:50',
          
-           'img' => 'required|required|mimes:jpg,jpeg|max:300'
+           'img' => 'required|required|mimes:jpg,jpeg,png|max:400'
        ]);
         $photo=$request->file('img');
         $path=$photo->storeAs('blogs','A-'.time().$photo->getClientOriginalName(),'images');

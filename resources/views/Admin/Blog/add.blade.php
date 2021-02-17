@@ -113,7 +113,7 @@
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">EN Body</label>
                                         <div class="col-sm-10">
-                                            <textarea class="form-control {{ ($errors->has('enInfo')) ? 'is-invalid' : '' }}" name="enInfo" id="" cols="30" rows="10" required>{{ old('enInfo') }}</textarea>
+                                            <textarea id="enInfo" class="form-control {{ ($errors->has('enInfo')) ? 'is-invalid' : '' }}" name="enInfo" id="" cols="30" rows="10" required>{{ old('enInfo') }}</textarea>
                                             @if($errors->has('enInfo'))
                                                 <div class="invalid-feedback">
                                                     <strong>{{ $errors->first('enInfo')  }}</strong>
@@ -124,7 +124,7 @@
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">AR Body</label>
                                         <div class="col-sm-10">
-                                            <textarea class="form-control {{ ($errors->has('arInfo')) ? 'is-invalid' : '' }}" name="arInfo" id="" cols="30" rows="10" required>{{ old('arInfo') }}</textarea>
+                                            <textarea id="arInfo" class="form-control {{ ($errors->has('arInfo')) ? 'is-invalid' : '' }}" name="arInfo" id="" cols="30" rows="10" required>{{ old('arInfo') }}</textarea>
                                             @if($errors->has('arInfo'))
                                                 <div class="invalid-feedback">
                                                     <strong>{{ $errors->first('arInfo')  }}</strong>
@@ -135,7 +135,7 @@
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">BA Body</label>
                                         <div class="col-sm-10">
-                                            <textarea class="form-control {{ ($errors->has('baInfo')) ? 'is-invalid' : '' }}" name="baInfo" id="" cols="30" rows="10" required>{{ old('baInfo') }}</textarea>
+                                            <textarea id="baInfo" class="form-control {{ ($errors->has('baInfo')) ? 'is-invalid' : '' }}" name="baInfo" id="" cols="30" rows="10" required>{{ old('baInfo') }}</textarea>
                                             @if($errors->has('baInfo'))
                                                 <div class="invalid-feedback">
                                                     <strong>{{ $errors->first('baInfo')  }}</strong>
@@ -177,7 +177,14 @@
 									</div>
 
 
-
+									<script>
+										// Replace the <textarea id="editor1"> with a CKEditor 4
+										// instance, using default configuration.
+										CKEDITOR.replace( 'enInfo' );
+										CKEDITOR.replace( 'arInfo' );
+										CKEDITOR.replace( 'baInfo' );
+									
+									</script>
 
 
 

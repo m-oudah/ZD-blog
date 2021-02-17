@@ -18,6 +18,10 @@ class CreateAboutUsTable extends Migration
             $table->text('enInfo');
             $table->text('arInfo');
             $table->text('baInfo');
+            $table->text('arContact');
+            $table->text('enContact');
+            $table->text('baContact');
+            $table->text('footer_text');
             $table->timestamps();
         });
     }

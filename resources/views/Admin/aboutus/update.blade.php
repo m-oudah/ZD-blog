@@ -76,12 +76,11 @@
 									@csrf
                                     @method('POST')
 									
-                                   
                                     
 									<div class="form-group row">
                                         <label class="col-sm-2 col-form-label">EN Body</label>
                                         <div class="col-sm-10">
-                                            <textarea class="form-control {{ ($errors->has('enInfo')) ? 'is-invalid' : '' }}" name="enInfo" id="" cols="30" rows="10" required>{{ old('enInfo',$aboutus->enInfo) }}</textarea>
+                                            <textarea id ="enInfo" class="form-control {{ ($errors->has('enInfo')) ? 'is-invalid' : '' }}" name="enInfo" id="" cols="30" rows="10" required>{{ old('enInfo',$aboutus->enInfo) }}</textarea>
                                             @if($errors->has('enInfo'))
                                                 <div class="invalid-feedback">
                                                     <strong>{{ $errors->first('enInfo')  }}</strong>
@@ -93,7 +92,7 @@
 									<div class="form-group row">
                                         <label class="col-sm-2 col-form-label">AR Body</label>
                                         <div class="col-sm-10">
-                                            <textarea class="form-control {{ ($errors->has('arInfo')) ? 'is-invalid' : '' }}" name="arInfo" id="" cols="30" rows="10" required>{{ old('arInfo',$aboutus->arInfo) }}</textarea>
+                                            <textarea id="arInfo" class="form-control {{ ($errors->has('arInfo')) ? 'is-invalid' : '' }}" name="arInfo" id="" cols="30" rows="10" required>{{ old('arInfo',$aboutus->arInfo) }}</textarea>
                                             @if($errors->has('arInfo'))
                                                 <div class="invalid-feedback">
                                                     <strong>{{ $errors->first('arInfo')  }}</strong>
@@ -105,7 +104,7 @@
 									<div class="form-group row">
                                         <label class="col-sm-2 col-form-label">BA Body</label>
                                         <div class="col-sm-10">
-                                            <textarea class="form-control {{ ($errors->has('baInfo')) ? 'is-invalid' : '' }}" name="baInfo" id="" cols="30" rows="10" required>{{ old('baInfo',$aboutus->baInfo) }}</textarea>
+                                            <textarea id="baInfo" class="form-control {{ ($errors->has('baInfo')) ? 'is-invalid' : '' }}" name="baInfo" id="" cols="30" rows="10" required>{{ old('baInfo',$aboutus->baInfo) }}</textarea>
                                             @if($errors->has('baInfo'))
                                                 <div class="invalid-feedback">
                                                     <strong>{{ $errors->first('baInfo')  }}</strong>
@@ -114,17 +113,76 @@
                                         </div>
                                     </div>
 
+									<hr/>
 
+									<div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Contact Us En</label>
+                                        <div class="col-sm-10">
+                                            <textarea id="enContact" class="form-control {{ ($errors->has('enContact')) ? 'is-invalid' : '' }}" name="enContact" id="" cols="30" rows="10" required>{{ old('enContact',$aboutus->enContact) }}</textarea>
+                                            @if($errors->has('enContact'))
+                                                <div class="invalid-feedback">
+                                                    <strong>{{ $errors->first('enContact')  }}</strong>
+                                                </div>
+                                            @endif
+                                        </div>
+                                    </div>
+									<div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Contact Us Ar</label>
+                                        <div class="col-sm-10">
+                                            <textarea id="arContact" class="form-control {{ ($errors->has('arContact')) ? 'is-invalid' : '' }}" name="arContact" id="" cols="30" rows="10" required>{{ old('arContact',$aboutus->arContact) }}</textarea>
+                                            @if($errors->has('arContact'))
+                                                <div class="invalid-feedback">
+                                                    <strong>{{ $errors->first('arContact')  }}</strong>
+                                                </div>
+                                            @endif
+                                        </div>
+                                    </div>
+									<div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Contact Us Ba</label>
+                                        <div class="col-sm-10">
+                                            <textarea id="baContact" class="form-control {{ ($errors->has('baContact')) ? 'is-invalid' : '' }}" name="baContact" id="" cols="30" rows="10" required>{{ old('baContact',$aboutus->baContact) }}</textarea>
+                                            @if($errors->has('baContact'))
+                                                <div class="invalid-feedback">
+                                                    <strong>{{ $errors->first('baContact')  }}</strong>
+                                                </div>
+                                            @endif
+                                        </div>
+                                    </div>
 
-
-                                    <div class="form-group row">
+									<hr/>
 									
 
+									<div class="form-group row">
+										<label class="col-sm-2 col-form-label">Footer Text </label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control {{ ($errors->has('footer_text')) ? 'is-invalid' : '' }} " name="footer_text" id="less"
+                                                   placeholder="Footer Text" value=" {{ old('footer_text', $aboutus->footer_text) }} " required>
+											@if($errors->has('footer_text'))
+                                            <div class="invalid-feedback">
+                                                <strong>{{ $errors->first('footer_text')  }}</strong>
+                                            </div>
+                                            @endif
+										</div>
+									</div>
+
+                                    <div class="form-group row">									
 											<span class="messages"></span>
 										</div>
 									</div>
 
+									
+									<script>
+										// Replace the <textarea id="editor1"> with a CKEditor 4
+										// instance, using default configuration.
+										CKEDITOR.replace( 'enInfo' );
+										CKEDITOR.replace( 'arInfo' );
+										CKEDITOR.replace( 'baInfo' );
 
+										CKEDITOR.replace( 'enContact' );
+										CKEDITOR.replace( 'arContact' );
+										CKEDITOR.replace( 'baContact' );
+									
+									</script>
 
 
 									<div class="row">

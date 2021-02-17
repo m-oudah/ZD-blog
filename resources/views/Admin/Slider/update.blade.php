@@ -117,7 +117,7 @@
                                             Image
                                         </label>
                                         <div class="col-sm-10">
-                                            <img src="{{url('images/'.$slider->img)}}" alt="">
+                                            <img src="{{url('images/'.$slider->img)}}" width="400px" alt="">
                                         </div>
                                     </div>
 

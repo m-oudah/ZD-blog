@@ -5,7 +5,9 @@
 
 
 <head>
-    <script src="https://cdn.ckeditor.com/4.7.2/full/ckeditor.js"></script>
+    <!-- <script src="https://cdn.ckeditor.com/4.7.2/full/ckeditor.js"></script> -->
+    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+
     @yield('head')
     <title>Control Panel</title>
 
