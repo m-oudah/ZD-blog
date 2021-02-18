@@ -25,3 +25,6 @@ Route::get('blogs', 'ApiController@getAllBlogs');   // get all blogs
 Route::get('categs', 'ApiController@getBlogCategs');   // get all blog categories
 Route::get('blogsbycat/{id}', 'ApiController@getBlogByCat');   // get all blogs by Category id
 
+Route::get('getposts/{n}', 'ApiController@getLatestPosts');   // get latest {n} of posts
+Route::get('getpostbyid/{id}', 'ApiController@getPostById');   // get post by id
+

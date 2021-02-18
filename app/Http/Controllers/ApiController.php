@@ -16,12 +16,7 @@ use DB;
 class ApiController extends Controller
 {
     public function getAllBlogs() {
-        // $players = DB::table('users')
-        // //->join('teams', 'players.teamID', '=', 'teams.teamID')
-        // ->select('users.id', 'users.name','users.profile_pic','users.email' ,'users.mobile_no')
-        // ->where('users.user_type',3)
-        // ->get();
-
+      
        
         $blogs = blog::all();
        // $categs = blogCategory::all();
@@ -71,5 +66,32 @@ class ApiController extends Controller
 
         return response()->json(['code'=> 200, 'data'=>$arr]);
       }
+
+
+      public function getLatestPosts($n) {
+        $latestposts=blog::paginate($n);
+      
+
+        $arr['blogs']=$latestposts;
+
+
+        return response()->json(['code'=> 200, 'data'=>$arr]);
+      }
+
+
+
+      public function getPostById($post_id) {
+        $latestposts=blog::find($post_id);
+      
+
+        $arr['blogs']=$latestposts;
+
+
+        return response()->json(['code'=> 200, 'data'=>$arr]);
+      }
+
+
+
+
 
 }

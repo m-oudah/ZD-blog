@@ -1,9 +1,9 @@
 <?php $language = app()->getLocale(); ?>
 
 		<!-- Header Section -->
-	<header class="container-fluid no-left-padding no-right-padding header_s header-fix header_s3">
+	<header class="container-fluid no-left-padding no-right-padding header_s header-fix header_s3" >
 		<!-- Menu Block -->
-		<div class="container-fluid no-left-padding no-right-padding menu-block">
+		<div class="container-fluid no-left-padding no-right-padding menu-block" style="background-color:#e9f1f2;border-bottom:solid 2px;">
 			<!-- Container -->
 			<div class="container">				
 				<nav class="navbar ownavigation navbar-expand-lg">

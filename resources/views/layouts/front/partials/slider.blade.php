@@ -2,7 +2,7 @@
 
   
   <!-- Slider Section -->
-  <div class="container-fluid no-left-padding no-right-padding slider-section">
+  <div class="container-fluid no-left-padding no-right-padding slider-section" style="border-bottom:solid 2px;">
             <div id="mm-slider-1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="mm-slider-1" data-source="gallery">
                 <!-- START REVOLUTION SLIDER 5.4.1 fullwidth mode -->
                 <div id="mm-slider-1" class="rev_slider fullwidthabanner" data-version="5.4.1">

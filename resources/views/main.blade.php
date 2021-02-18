@@ -16,7 +16,7 @@
             <div class="container">
                 <!-- Section Header -->
                 <div class="section-header">
-                    <h3 style="font-size:30px;">@lang ('trans.trending')</h3>
+                    <h3 style="font-size:30px; font-weight: bold;">@lang ('trans.trending')</h3>
                 </div><!-- Section Header /- -->
                 <div class="trending-carousel">
 
