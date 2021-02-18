@@ -71,31 +71,32 @@
 							
 						
 							<!-- Related Post -->
-							<div class="related-post">
-								<h3>You May Also Like</h3>
-								<div class="related-post-block">
-									<div class="related-post-box">
-										<a href="#"><img src="http://placehold.it/170x113" alt="Post" /></a>
-										<span><a href="#" title="Travel">Travel</a></span>
-										<h3><a href="#" title="Traffic Jams Solved">Traffic Jams Solved</a></h3>
+								<!-- <div class="related-post">
+									<h3>You May Also Like</h3>
+									<div class="related-post-block">
+										<div class="related-post-box">
+											<a href="#"><img src="http://placehold.it/170x113" alt="Post" /></a>
+											<span><a href="#" title="Travel">Travel</a></span>
+											<h3><a href="#" title="Traffic Jams Solved">Traffic Jams Solved</a></h3>
+										</div>
+										<div class="related-post-box">
+											<a href="#"><img src="http://placehold.it/170x113" alt="Post" /></a>
+											<span><a href="#" title="Science">Science</a></span>
+											<h3><a href="#" title="How Astronauts Live">How Astronauts Live</a></h3>
+										</div>
+										<div class="related-post-box">
+											<a href="#"><img src="http://placehold.it/170x113" alt="Post" /></a>
+											<span><a href="#" title="Nature">Nature</a></span>
+											<h3><a href="#" title="White Sand">White Sand</a></h3>
+										</div>
+										<div class="related-post-box">
+											<a href="#"><img src="http://placehold.it/170x113" alt="Post" /></a>
+											<span><a href="#" title="Lifestyle">Lifestyle</a></span>
+											<h3><a href="#" title="Sunset at Beach">Sunset at Beach</a></h3>
+										</div>
 									</div>
-									<div class="related-post-box">
-										<a href="#"><img src="http://placehold.it/170x113" alt="Post" /></a>
-										<span><a href="#" title="Science">Science</a></span>
-										<h3><a href="#" title="How Astronauts Live">How Astronauts Live</a></h3>
-									</div>
-									<div class="related-post-box">
-										<a href="#"><img src="http://placehold.it/170x113" alt="Post" /></a>
-										<span><a href="#" title="Nature">Nature</a></span>
-										<h3><a href="#" title="White Sand">White Sand</a></h3>
-									</div>
-									<div class="related-post-box">
-										<a href="#"><img src="http://placehold.it/170x113" alt="Post" /></a>
-										<span><a href="#" title="Lifestyle">Lifestyle</a></span>
-										<h3><a href="#" title="Sunset at Beach">Sunset at Beach</a></h3>
-									</div>
-								</div>
-							</div><!-- Related Post /- -->
+								</div> -->
+							<!-- Related Post /- -->
 						
 						</div><!-- Content Area /- -->
 						<!-- Widget Area -->

@@ -15,12 +15,17 @@ use App\User;
 */
 
 
+
+
 Route::group([
    'prefix' => '{locale}', 
    'where' => ['locale' => '[a-zA-Z]{2}'], 
    'middleware' => 'setlocale'], function() {
 
     Route::get('/','HomeController@index')->name('index');
+
+ 
+
 
     // Route::get('index/{lang}','HomeController@index');
 

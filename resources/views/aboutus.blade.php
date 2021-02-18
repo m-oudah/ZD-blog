@@ -57,7 +57,7 @@
 							
 							
 							<!-- Related Post -->
-							<div class="related-post">
+							<!-- <div class="related-post">
 								<h3>You May Also Like</h3>
 								<div class="related-post-block">
 									<div class="related-post-box">
@@ -81,7 +81,8 @@
 										<h3><a href="#" title="Sunset at Beach">Sunset at Beach</a></h3>
 									</div>
 								</div>
-							</div><!-- Related Post /- -->
+							</div> -->
+							<!-- Related Post /- -->
 						
 						</div><!-- Content Area /- -->
 						<!-- Widget Area -->
