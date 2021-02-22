@@ -56,7 +56,8 @@
 						</div>
 	
 						<div class="col-6">
-						<form method="POST" action="index.php" >
+						<form method="POST" action="contact-us" >
+							{{csrf_field()}}
 							<div class="row">
 								
 								    <div class="col-md-6 col-sm-6 col-xs-12">
@@ -80,7 +81,7 @@
                                     </div>
 
 									<div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                                        <button type="submit" class="contact-btn">@lang('trans.submit')</button>
+                                        <button type="submit" class="contact-submit-btn" >@lang('trans.submit')</button>
                                         <div class="clearfix"></div>
                                     </div>
 							
@@ -89,6 +90,8 @@
 							
 
 						</div>
+
+						
 	
 						</div><!-- Row /- -->
 					</div>

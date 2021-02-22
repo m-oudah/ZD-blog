@@ -15,6 +15,9 @@ use App\User;
 */
 
 
+Route::get('/', function () {
+   return redirect(app()->getLocale());
+});
 
 
 Route::group([
@@ -22,8 +25,10 @@ Route::group([
    'where' => ['locale' => '[a-zA-Z]{2}'], 
    'middleware' => 'setlocale'], function() {
 
-    Route::get('/','HomeController@index')->name('index');
-
+   
+      Route::get('/','HomeController@index')->name('index');
+  
+   
  
 
 
@@ -31,12 +36,14 @@ Route::group([
 
     Route::get('blog/{id}','HomeController@singlePost')->name('blog');
 
-
+    Route::get('top','HomeController@mostViwedPosts');
 
     Route::get('categ/{id}','HomeController@categPosts')->name('categ');
 
     Route::get('aboutus','HomeController@aboutus')->name('aboutus');
     Route::get('contact','HomeController@contact')->name('contact');
+    Route::post('contact-us', 'HomeController@saveContact');
+
 
     Route::get('find','HomeController@findPost')->name('findpost');
 

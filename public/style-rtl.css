@@ -15,7 +15,7 @@
 	
 	## Font List		
 		- font-family: 'Hind', sans-serif;
-		- font-family: 'Almarai', sans-serif;
+		- font-family: 'Tajawal', sans-serif;
 
 	## Global
 	
@@ -65,10 +65,10 @@
 /* ## Global ******************************************* */
 
 @import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
 
 body {
-	font-family: 'Hind', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 16px;
 	color: #151515;
 	overflow-x: hidden;
@@ -272,7 +272,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 }
 .header_s .search-box form input  {
 	color: #717171;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 18px;
 	font-style: normal;
 }
@@ -341,7 +341,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 }
 .top-header .logo-block > a {
 	color: #151515;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 36px;
 	font-weight: bold;
 	letter-spacing: 1.8px;
@@ -376,7 +376,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	position: relative;
 }
 .user-info > li > a {
-	color: #151515;
+	color: #fff;
 	font-size: 22px;
 	text-decoration: none;
 }
@@ -425,13 +425,35 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	-mos-transition: -mos-transform 0.4s, opacity 0.1s 0.3s;
 	-o-transition: -o-transform 0.4s, opacity 0.1s 0.3s;
 }
+
+.contact-submit-btn {
+
+	background-color: #464646;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 14px;
+    letter-spacing: -0.35px;
+    display: inline-block;
+    padding: 9px 10px;
+    margin-top: 7px;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+	margin-right:5px;
+	
+}
 .header_s .user-info li .dropdown-menu > li {
 	padding-left: 20px;
 	padding-right: 20px;
 }
 .header_s .user-info li .dropdown-menu > li > a {
 	border-top: 1px solid #eeeeee;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 12px;
 	color: #464646;
 	padding: 11px 0;
@@ -477,8 +499,8 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	padding: 0;
 }
 .header_s .menu-block .ownavigation .navbar-nav > li a {
-	color: #151515;
-	font-family: 'Almarai', sans-serif;
+	color: #fff;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 13px;
 	letter-spacing: 0.325px;
 	line-height: 1.53;
@@ -492,7 +514,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	color: #717171;
 }
 .header_s .ownavigation .navbar-nav li .dropdown-menu li > a { 
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 14px;
 	color: #717171;
 	text-transform: capitalize;
@@ -522,7 +544,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 .header_s.header_s3 .menu-block .ownavigation > a.navbar-brand {
 	color: #151515;
 	display: block;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 30px;
 	font-weight: bold;
 	letter-spacing: 1.5px;
@@ -680,7 +702,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	opacity: 1;
 }
 .ftr-social {
-	margin-top: 50px;
+	margin-top: 30px;
 	margin-bottom: 0;
 	padding: 0;
 	text-align: center;
@@ -691,7 +713,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	margin: 0 33px;
 }
 .ftr-social > li > a {
-	color: #464646;
+	color: #fff;
 	font-size: 14px;
 	font-weight: bold;
 	text-decoration: none;
@@ -745,7 +767,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 }
 .subscribe-block .container > h3 {
 	display: inline-block;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 24px;
 	font-weight: bold;
 	letter-spacing: -0.6px;
@@ -781,7 +803,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	border-radius: 0;
 	color: #fff;
 	cursor: pointer;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	margin-left: 0;
@@ -842,7 +864,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 }
 .section-header h3 {
 	color: #151515;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 19px;
 	font-weight: 400;
 	line-height: 1.875;
@@ -867,7 +889,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 
 .block-title  h3 {
 	color: #151515;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 1.4;
@@ -979,7 +1001,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	border-left: 1px solid #ebebeb;
 	border-right: 1px solid #ebebeb;
 	color: #464646;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	margin: 0;
@@ -1030,7 +1052,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	border-left: 1px solid #ebebeb;
 	border-right: 1px solid #ebebeb;
 	color: #464646;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	float: left;
@@ -1116,7 +1138,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	font-weight: 700;
 	color: #ffffff;
 	letter-spacing: 0px;
-	font-family:Almarai;
+	font-family:'Tajawal';
 	text-decoration: none;
 }
 .slider-section .slidecnt3 {
@@ -1198,7 +1220,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	line-height: 2;
 }
 .slider-section2 .container .row .post-block .post-box .entry-content h3 { 
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 30px;
 	font-weight: bold;
 	letter-spacing: 0.3px;
@@ -1301,7 +1323,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	line-height: 2;
 }
 .slider-section3 .container .row .post-block .post-box .entry-content h3 { 
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 30px;
 	font-weight: bold;
 	letter-spacing: 0.3px;
@@ -1392,7 +1414,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	line-height: 2;
 }
 .slider-carousel-4 .post-box .entry-content > h3 {
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 24px;
 	font-weight: bold;
 	letter-spacing: 0.24px;
@@ -1452,7 +1474,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	text-decoration: none;
 }
 .slider-section5 .post-item .carousel-caption > h3 {
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 30px;
 	font-weight: bold;
 	letter-spacing: 0.3px;
@@ -1535,7 +1557,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	text-decoration: none;
 }
 .slider-carousel .post-box .entry-content > h3 {
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 30px;
 	font-weight: bold;
 	letter-spacing: 0.3px;
@@ -1696,11 +1718,11 @@ div.type-post .entry-content {
 }
 .type-post .entry-header .entry-title {
 	color: #151515;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 24px;
-	font-weight: bold;
-	letter-spacing: -0.6px;
-	line-height: 1.25;
+	/* font-weight: bold; */
+	/* letter-spacing: -0.6px; */
+	line-height: 1.4;
 	margin: 5px 0 16px;
 	padding-bottom: 18px;
 	position: relative;
@@ -1729,7 +1751,7 @@ div.type-post .entry-content {
 }
 .type-post .entry-content p {
 	color: #717171;
-	font-family:'Almarai', sans-serif;
+	font-family:'Tajawal', sans-serif;
 	letter-spacing: 0.225px;
 	line-height: 1.7;
 	-webkit-hyphens: auto;
@@ -1880,7 +1902,7 @@ article[class*="type-"] .entry-header .entry-title {
 	margin-bottom: 15px;
 }
 article[class*="type-"] .entry-content blockquote {
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 22px;
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -1893,7 +1915,7 @@ article[class*="type-"] .entry-content blockquote p {
 }
 article[class*="type-"] .entry-content blockquote span {
 	color: #717171;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	letter-spacing: -0.4px;
@@ -1901,7 +1923,7 @@ article[class*="type-"] .entry-content blockquote span {
 }
 article[class*="type-"] .entry-content > h4 {
 	color: #151515;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 22px;
 	font-weight: bold;
 	letter-spacing: -0.55px;
@@ -2052,7 +2074,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 .about-author-box .author > h4 {
 	color: #131313;
 	display: inline-block;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 18px;
 	font-weight: 600;
 	letter-spacing: -0.45px;
@@ -2096,7 +2118,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 	width: 100%;
 }
 .related-post > h3 {
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: -0.4px;
@@ -2138,7 +2160,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 	text-decoration: none;
 }
 .related-post .related-post-box > h3 {
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 1.42;
@@ -2157,7 +2179,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
     width: 100%;
 }
 .comments-title {
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: -0.4px;
@@ -2200,7 +2222,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 .comment-author { 
 	color: #151515;
 	display: inline-block;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: -0.4px;
@@ -2268,7 +2290,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 	width: 100%;
 }
 .comment-reply-title {
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: -0.4px;
@@ -2343,7 +2365,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
     color: #fff;
 	cursor: pointer;
 	float: right;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
     font-size: 14px;
     letter-spacing: -0.35px;
 	line-height: 1.42;
@@ -2439,7 +2461,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 }
 .post-nosidebar > .entry-cover .entry-header .entry-title { 
 	color: #fff;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 40px;
 	font-weight: bold;
 	letter-spacing: -1px;
@@ -2454,7 +2476,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 }
 .aboute-block h3 {
 	color: #151515;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 22px;
 	font-weight: bold;
 	line-height: 1.36;
@@ -2465,7 +2487,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 .aboute-block span {
 	color: #717171;
 	display: block;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	letter-spacing: -0.4px;
@@ -2527,7 +2549,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 }
 .team-box h4 { 
 	color: #151515;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 18px;
 	font-weight: bold;
 	letter-spacing: -0.45px;
@@ -2613,7 +2635,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 	box-shadow: none;
 	color: #ffffff;
 	float: right;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 14px;
 	letter-spacing: -0.35px;
 	line-height: 20px;
@@ -2666,7 +2688,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 }
 .error-block h2 {
 	color: #151515;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 36px;
 	font-weight: 700;
 	letter-spacing: -0.9px;
@@ -2683,7 +2705,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 	background-color: #464646;
 	color: #ffffff;
 	display: inline-block;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	letter-spacing: -0.35px;
@@ -2826,7 +2848,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 		margin: 20px 0;
 	}
 	.header_s.header_s3 .menu-block .ownavigation > a.navbar-brand { 
-		margin: 28px 0 26px;
+		/* margin: 28px 0 26px; */
 	}
 	.header_s.header_s3 .menu-block .ownavigation .navbar-nav {
 		margin-right: 60px;
@@ -2836,7 +2858,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 		margin-top: 40px;
 	}
 	.header_s.header_s3.fixed-top .menu-block .ownavigation > a.navbar-brand {
-		margin: 15px 0 13px;
+		/* margin: 15px 0 13px; */
 	}
 	.header_s.header_s3.fixed-top .menu-block .ownavigation .navbar-nav > li > a {
 		margin-bottom: 15px;
@@ -2958,7 +2980,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 	}
 	.header_s .menu-block .ownavigation > a.navbar-brand {
 		color: #151515;
-		font-family: 'Almarai', sans-serif;
+		font-family: 'Tajawal', sans-serif;
 		font-size: 30px;
 		font-weight: bold;
 		letter-spacing: 1.8px;
@@ -3011,8 +3033,8 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 	}
 	
 	.header_s .menu-block .ownavigation > a.navbar-brand {
-		margin-bottom: 8px;
-		margin-top: 8px;
+		/* margin-bottom: 8px;
+		margin-top: 8px; */
 	}
 	.header_s .ownavigation .ddl-switch {
 		background-color: #151515;
@@ -3456,10 +3478,10 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 .widget-area > [class*="col-"] {
     padding-bottom: 10px;
     padding-top: 10px;
-	font-family: "Almarai",sans-serif;
+	font-family: "Tajawal",sans-serif;
 }
 .widget a {	
-	font-family: "Almarai",sans-serif;
+	font-family: "Tajawal",sans-serif;
 	text-decoration: none;
 	color: #464646;
 	font-size: 14px;
@@ -3469,7 +3491,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 }
 .widget-title {
     color: #151515;
-    font-family: "Almarai",sans-serif;
+    font-family: "Tajawal",sans-serif;
     font-size: 16px;
     line-height: 1.66;
     margin-bottom: 25px;
@@ -3523,7 +3545,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 	background-color: #f7f7f7;
     color: #464646;
     display: inline-block;
-    font-family: "Almarai",sans-serif;
+    font-family: "Tajawal",sans-serif;
     font-size: 12px;
 	margin-bottom: 3px;
     padding: 9px 15px;
@@ -3608,7 +3630,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
     text-align: center;
     padding: 0;
 	border: none;
-	font-family: "Almarai",sans-serif;
+	font-family: "Tajawal",sans-serif;
 }
 .widget_calendar caption {
 	caption-side: top;
@@ -3664,7 +3686,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 	background-color: #f7f7f7; 
     color: #464646;
     display: inline-block;
-    font-family: "Almarai",sans-serif;
+    font-family: "Tajawal",sans-serif;
     font-size: 12px;
     text-decoration: none;
     text-transform: uppercase;
@@ -3798,7 +3820,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 	border-bottom: 1px solid #aaa;
 	color: #464646;
 	display: block;
-	font-family: "Almarai",sans-serif;
+	font-family: "Tajawal",sans-serif;
 	font-size: 12px;
 	line-height: 1.66;
 	padding-top: 8px;
@@ -3865,7 +3887,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 	margin-right: 5px;
 }
 .widget_recent_comments ul li a {
-	font-family: "Almarai",sans-serif;
+	font-family: "Tajawal",sans-serif;
 	text-transform: initial;
 	font-size: 15px;
 }
@@ -3888,7 +3910,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 .widget_recent_entries ul li a {
 	display: inline-block;
 	color: #464646;
-	font-family: "Almarai",sans-serif;
+	font-family: "Tajawal",sans-serif;
 	font-size: 15px;
 	width: 100%;
 	text-transform: inherit;
@@ -3980,7 +4002,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 }
 .widget_latestposts .latest-content h5 > a {
 	color: #151515;
-	font-family: "Almarai",sans-serif;
+	font-family: "Tajawal",sans-serif;
     font-size: 15px;
     font-weight: 400;
     letter-spacing: -0.375px;
@@ -4176,7 +4198,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 	font-size: 12px;
 	line-height: 1.66;
 	color: #151515;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-weight: 500;
 	text-transform: uppercase;
 	background-color: rgba(255,255,255,0.9);
@@ -4295,7 +4317,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 	border: none;
 	cursor: pointer;
 	color: #fff;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 14px;
 	letter-spacing: -0.35px;
 	display: inline-block;
@@ -4335,7 +4357,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 	font-size: 12px;
 }
 .widget_tranding_post .trnd-post-box > h3 {
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: 18px;
 	letter-spacing: -0.45px;
 	line-height: 1.38;
@@ -4392,7 +4414,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 	font-size: 24px;
 	line-height: 0.83;
 	color: #ffffff;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -4400,7 +4422,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 	font-size: 14px;
 	line-height: 1.42;
 	color: #ffffff;
-	font-family: 'Almarai', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
 	padding-left: 34px;
@@ -4706,8 +4728,8 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 .navbar-brand {
 	height: auto;
 	padding: 0;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	/* margin-top: 15px;
+	margin-bottom: 15px; */
 }
 
 /* - Nav Toggle */

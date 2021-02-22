@@ -82,11 +82,11 @@
 
                                         </div>		
                                             @if ($language=='en')				
-                                            <p> {{ Str::words($blog->enInfo,10) }}  </p>
+                                            <p> {{ strip_tags(Str::words($blog->enInfo,10)) }}  </p>
                                             @elseif ($language=='ar')
-                                            <p> {{ Str::words($blog->arInfo,10) }}  </p>
+                                            <p> {{ strip_tags(Str::words($blog->arInfo,10)) }}  </p>
                                             @elseif($language=='ba')
-                                            <p> {{ Str::words($blog->baInfo,10) }}  </p>
+                                            <p> {{ strip_tags(Str::words($blog->baInfo,10)) }}  </p>
                                             @endif
                                         <a href="{{ route('blog', ['id' => $blog->id, app()->getLocale()] ) }}" title="@lang ('trans.readmore')">@lang ('trans.readmore')</a>
                                     </div>

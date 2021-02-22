@@ -3,11 +3,13 @@
 		<!-- Header Section -->
 	<header class="container-fluid no-left-padding no-right-padding header_s header-fix header_s3" >
 		<!-- Menu Block -->
-		<div class="container-fluid no-left-padding no-right-padding menu-block" style="background-color:#e9f1f2;border-bottom:solid 2px;">
+		<div class="container-fluid no-left-padding no-right-padding menu-block" style="background-color:#333366;border-bottom:solid 2px;">
 			<!-- Container -->
 			<div class="container">				
 				<nav class="navbar ownavigation navbar-expand-lg">
-					<a class="navbar-brand" href="/{{$language}}">{{ config('app.name', 'ZD') }}</a>
+					<a class="navbar-brand" href="/{{$language}}">
+					<img src="<?php echo url('/'); ?>/assets/images/logo_blue_bg.png" style="border-style:none; width:100px;" />
+					</a>
 					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar4" aria-controls="navbar4" aria-expanded="false" aria-label="Toggle navigation">
 						<i class="fa fa-bars"></i>
 					</button>

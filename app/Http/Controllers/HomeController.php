@@ -7,6 +7,7 @@ use App\Model\blogCategory;
 use App\Model\slider;
 use App\Model\blog;
 use App\Model\aboutus;
+use App\Model\PostsViews;
 use App;
 use DB;
 
@@ -29,7 +30,7 @@ class HomeController extends Controller
      */
     public function index($lang)
     {
-        // App::setlocale($lang);
+        //  App::setlocale($lang);
 
         $blogCategs=blogCategory::all();
         $arr['blogCategs']=$blogCategs;
@@ -86,18 +87,19 @@ public function singlePost ($lang, $id){
     $arr['page']="blogs";
     $arr['page']="blogCategs";
 
+    PostsViews::createViewLog($blogs);//or add `use App\PostView;` in beginning of the file in order to use only `PostView` here 
+
+
     return view('singlepost',$arr);
 }
 
 public function findPost ($lang,Request $request){
    
-$title = $request->title;
+    $title = $request->title;
    
-
     $latestposts=blog::paginate(6);
     $arr['latestposts']=$latestposts;
     $arr['page']="latestposts";
-
 
     $popularposts=blog::paginate(4);
     $arr['popularposts']=$popularposts;
@@ -114,6 +116,13 @@ $title = $request->title;
     $arr['page']="blogCategs";
 
     return view('find',$arr);
+}
+
+
+public function mostViwedPosts()
+{
+    
+    return blog::with('user')->where('created_at','>=', now()->subdays(1))->orderBy('views', 'desc')->latest()->paginate(5);
 }
 
 
@@ -192,9 +201,44 @@ public function contact (){
     return view('contact',$arr);
 }
 
-    public function demo()
-    {
-        return view('demo');
-    }
+        public function saveContact(Request $request) { 
+
+            $this->validate($request, [
+                'name' => 'required',
+                'email' => 'required|email',
+                'subject' => 'required',
+                'phone_number' => 'required',
+                'message' => 'required'
+            ]);
+
+            $contact = new Contact;
+
+            $contact->name = $request->name;
+            $contact->email = $request->email;
+            $contact->subject = $request->subject;
+            // $contact->phone_number = $request->phone_number;
+            $contact->message = $request->message;
+
+            $contact->save();
+
+            Mail::send('contact_email',
+             array(
+                 'name' => $request->get('name'),
+                 'email' => $request->get('email'),
+                 'subject' => $request->get('subject'),
+                //  'phone_number' => $request->get('phone_number'),
+                 'user_message' => $request->get('message'),
+             ), function($message) use ($request)
+               {
+                  $message->from($request->email);
+                  $message->to('info@zdportal.com');
+               });
+
+            
+            return back()->with('success', 'Thank you for contact us!');
+
+        }
+
+
 
 }

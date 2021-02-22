@@ -2,6 +2,7 @@
 
 namespace App\Model;
 
+
 use Illuminate\Database\Eloquent\Model;
 
 class blog extends Model
@@ -24,12 +25,34 @@ class blog extends Model
         'created_at',
         'updated_at'
     ];
-    // protected $appends = ['created_date'];
-    // public function getCreatedDateAttribute(){
-    //     return $this->created_at->diffForHumans();
-    // }
+  
 
     public function Category(){
         return $this->belongsTo(blogCategory::class,'catId');
     }
+
+    public function postsViews()
+    {
+        return $this->hasMany(PostsViews::class);
+    }
+
+    
+
+    public function showPost()
+    {
+        if(auth()->id()==null){
+            return $this->postsViews()
+            ->where('ip', '=',  request()->ip())->exists();
+        }
+
+        return $this->postsViews()
+        ->where(function($postViewsQuery) { $postViewsQuery
+            ->where('session_id', '=', request()->getSession()->getId())
+            ->orWhere('user_id', '=', (auth()->check()));})->exists();  
+    }
+
+
+    
+
+
 }

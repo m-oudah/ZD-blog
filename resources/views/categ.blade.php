@@ -6,7 +6,7 @@
 <div class="main-container">
 
 
-	<div  style= "padding:80px; color:#fff; background-color:#444;">
+	<div  style= "padding:80px; color:#fff; background-color:#5f5d58;">
 						<div class="row justify-content-md-center">
 							@if ($language=='en')				
 							<h2 class="entry-title" style="margin:10px; font-weight:bold; "> {{$category->enName}} </h2>
@@ -70,11 +70,11 @@
 												@endif											
 											</div>	
 											@if ($language=='en')				
-												<p>{{ Str::words($blog->enInfo,10) }}</p>
+												<p>{{ strip_tags(Str::words($blog->enInfo,10)) }}</p>
 												@elseif ($language=='ar')
-												<p>{{ Str::words($blog->arInfo,10) }}</p>
+												<p>{{ strip_tags(Str::words($blog->arInfo,10)) }}</p>
 												@elseif($language=='ba')
-												<p>{{ Str::words($blog->baInfo,10) }}</p>
+												<p>{{ strip_tags(Str::words($blog->baInfo,10)) }}</p>
 												@endif
 
 											<a href="{{ route('blog', ['id' => $blog->id, app()->getLocale()] ) }}" title="@lang('trans.readmore')">@lang('trans.readmore')</a>

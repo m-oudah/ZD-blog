@@ -372,7 +372,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	position: relative;
 }
 .user-info > li > a {
-	color: #151515;
+	color: #fff;
 	font-size: 22px;
 	text-decoration: none;
 }
@@ -473,7 +473,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	padding: 0;
 }
 .header_s .menu-block .ownavigation .navbar-nav > li a {
-	color: #151515;
+	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 13px;
 	letter-spacing: 0.325px;
@@ -676,7 +676,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	opacity: 1;
 }
 .ftr-social {
-	margin-top: 50px;
+	margin-top: 30px;
 	margin-bottom: 0;
 	padding: 0;
 	text-align: center;
@@ -686,7 +686,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 	margin: 0 33px;
 }
 .ftr-social > li > a {
-	color: #464646;
+	color: #fff;
 	font-size: 14px;
 	font-weight: bold;
 	text-decoration: none;
@@ -2818,7 +2818,7 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 		margin: 20px 0;
 	}
 	.header_s.header_s3 .menu-block .ownavigation > a.navbar-brand { 
-		margin: 28px 0 26px;
+		/* margin: 28px 0 26px; */
 	}
 	.header_s.header_s3 .menu-block .ownavigation .navbar-nav {
 		margin-right: 60px;
@@ -3003,8 +3003,8 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 	}
 	
 	.header_s .menu-block .ownavigation > a.navbar-brand {
-		margin-bottom: 8px;
-		margin-top: 8px;
+		/* margin-bottom: 8px;
+		margin-top: 8px; */
 	}
 	.header_s .ownavigation .ddl-switch {
 		background-color: #151515;
@@ -4698,8 +4698,8 @@ article[class*="type-"] .entry-content .entry-footer .social > li  > a:hover {
 .navbar-brand {
 	height: auto;
 	padding: 0;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	/* margin-top: 15px;
+	margin-bottom: 15px; */
 }
 
 /* - Nav Toggle */

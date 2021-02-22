@@ -68,8 +68,10 @@ class ApiController extends Controller
       }
 
 
-      public function getLatestPosts($n) {
-        $latestposts=blog::paginate($n);
+      public function getLatestPosts($catID, $n) {
+        
+              
+        $latestposts=blog::where('catId', $catID)->paginate($n);
       
 
         $arr['blogs']=$latestposts;
