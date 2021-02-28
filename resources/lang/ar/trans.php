@@ -14,7 +14,7 @@ return [
 'newsletter' => 'النشرة البريدية',
 'signup' => 'للاشتراك في النشرة البريدية',
 'subscribe' => 'اشترك الان',
-'popularposts' => 'مقالات شائعة',
+'popularposts' => 'الأكثر قراءة',
 'categories' => 'تصنيفات',
 'youremail' => 'بريدك الإلكتروني',
 'signtoreceive' =>'اشترك الان لتصلك آخر المقالات والأخبار' ,

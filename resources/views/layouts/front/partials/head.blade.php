@@ -19,7 +19,6 @@
 	<title>{{ config('app.name', 'ZD') }}</title>
 
 	<!-- Standard Favicon -->
-	<!-- <link rel="icon" type="image/x-icon" href="<?php echo url('/'); ?>/assets/images/favicon.ico" /> -->
 	
 	<!-- For iPhone 4 Retina display: -->
 	<link rel="apple-touch-icon-precomposed" href="<?php echo url('/'); ?>/assets/images/apple-touch-icon-114x114-precomposed.png">

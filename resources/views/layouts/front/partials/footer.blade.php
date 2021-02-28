@@ -1,5 +1,5 @@
 	<!-- Footer Main -->
-	<footer class="container-fluid no-left-padding no-right-padding footer-main footer-section1" style="background-color:#333366;border-top:solid 2px;">
+	<footer class="container-fluid no-left-padding no-right-padding footer-main footer-section1" style="background-color:#14296b;border-top:solid 2px;">
 		<!--
 		<div class="container-fluid no-left-padding no-right-padding subscribe-block">
 			

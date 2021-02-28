@@ -45,7 +45,9 @@ class HomeController extends Controller
         $arr['page']="trendingposts";
 
 
-        $popularposts=blog::paginate(4);
+        // $popularposts=blog::paginate(4);
+        $popularposts = blog::with('user')->where('created_at','>=', now()->subdays(1))->orderBy('views', 'desc')->latest()->paginate(5);
+
         $arr['popularposts']=$popularposts;
         $arr['page']="popularposts";
 
@@ -74,10 +76,19 @@ public function singlePost ($lang, $id){
     $arr['page']="latestposts";
 
 
-    $popularposts=blog::paginate(4);
+   
+
+    // $popularposts = blog::join("posts_views", "posts_views.blog_id", "=", "blogs.id")
+    // ->where("posts_views.created_at", ">=", date("Y-m-d H:i:s", strtotime('-24 hours', time())))
+    // ->groupBy("blogs.id")
+    // ->orderBy(DB::raw('COUNT(blogs.id)'), 'desc')//here its very minute mistake of a paranthesis in Jean Marcos' answer, which results ASC ordering instead of DESC so be careful with this line
+    // ->get([DB::raw('COUNT(blogs.id) as total_views'), 'blogs.*']);
+
+    $popularposts = blog::with('user')->where('created_at','>=', now()->subdays(1))->orderBy('views', 'desc')->latest()->paginate(5);
+
+
     $arr['popularposts']=$popularposts;
     $arr['page']="popularposts";
-
 
    
     $blogs =blog::find($id);
@@ -101,7 +112,9 @@ public function findPost ($lang,Request $request){
     $arr['latestposts']=$latestposts;
     $arr['page']="latestposts";
 
-    $popularposts=blog::paginate(4);
+    // $popularposts=blog::paginate(4);
+    $popularposts = blog::with('user')->where('created_at','>=', now()->subdays(1))->orderBy('views', 'desc')->latest()->paginate(5);
+
     $arr['popularposts']=$popularposts;
     $arr['page']="popularposts";
 
@@ -156,7 +169,9 @@ public function categPosts ($lang,$catID) {
 public function aboutus (){
    
 
-    $popularposts=blog::paginate(4);
+    // $popularposts=blog::paginate(4);
+    $popularposts = blog::with('user')->where('created_at','>=', now()->subdays(1))->orderBy('views', 'desc')->latest()->paginate(5);
+
     $arr['popularposts']=$popularposts;
     $arr['page']="popularposts";
 
